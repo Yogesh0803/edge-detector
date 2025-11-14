@@ -1,0 +1,6 @@
+# ninja log v5
+0	10066	7848058125724382	CMakeFiles/native-lib.dir/native-lib.cpp.o	88d9579c76ffe7b2
+10074	10809	7848058133046691	C:/Users/wwwyo/edgedetector/app/build/intermediates/cxx/Debug/172vz672/obj/arm64-v8a/libnative-lib.so	15e71135cb00e462
+0	10	0	clean	c4d1ffd1e53caff4
+13	2373	7848059032144917	CMakeFiles/native-lib.dir/native-lib.cpp.o	88d9579c76ffe7b2
+2374	2540	7848059033699635	C:/Users/wwwyo/edgedetector/app/build/intermediates/cxx/Debug/172vz672/obj/arm64-v8a/libnative-lib.so	15e71135cb00e462

@@ -1,0 +1,15 @@
+{
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "gradle.autoDetect": "on",
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "files.exclude": {
+    "**/.gradle": true,
+    "**/build": true,
+    "**/.idea": true
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "files.associations": {
+    "*.gradle.kts": "kotlin",
+    "CMakeLists.txt": "cmake"
+  }
+}

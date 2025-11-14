@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "mathiasfrohlich.kotlin",
+    "vscjava.vscode-gradle",
+    "ms-vscode.cpptools",
+    "ms-vscode.cmake-tools",
+    "redhat.vscode-xml",
+    "diemasmischiels.emulate"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Debug APK",
+      "type": "shell",
+      "command": "./gradlew",
+      "args": ["assembleDebug"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Clean Build",
+      "type": "shell",
+      "command": "./gradlew",
+      "args": ["clean"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Install on Device",
+      "type": "shell",
+      "command": "adb",
+      "args": ["install", "-r", "app/build/outputs/apk/debug/app-debug.apk"],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always"
+      }
+    },
+    {
+      "label": "Launch App",
+      "type": "shell",
+      "command": "adb",
+      "args": ["shell", "am", "start", "-n", "com.edgedetector/.MainActivity"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Build and Install",
+      "dependsOn": ["Build Debug APK", "Install on Device"],
+      "dependsOrder": "sequence",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Build, Install and Launch",
+      "dependsOn": ["Build Debug APK", "Install on Device", "Launch App"],
+      "dependsOrder": "sequence",
+      "problemMatcher": []
+    },
+    {
+      "label": "View Logcat",
+      "type": "shell",
+      "command": "adb",
+      "args": ["logcat"],
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "View App Logs",
+      "type": "shell",
+      "command": "bash",
+      "args": ["-c", "adb logcat -c && adb logcat | grep -E 'MainActivity|OpenCV|NativeProcessor|FPS'"],
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Check Device",
+      "type": "shell",
+      "command": "adb",
+      "args": ["devices"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Uninstall App",
+      "type": "shell",
+      "command": "adb",
+      "args": ["uninstall", "com.edgedetector"],
+      "problemMatcher": []
+    }
+  ]
+}

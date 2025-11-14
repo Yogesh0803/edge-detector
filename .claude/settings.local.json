@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(if [ -d \"opencv-android-sdk\" ])",
+      "Bash(then echo \"✅ OpenCV SDK found!\")",
+      "Bash(else echo \"❌ OpenCV SDK NOT found - you need to download it!\")",
+      "Bash(fi)",
+      "Bash(./gradlew tasks:*)",
+      "Bash(./gradlew assembleDebug:*)",
+      "Bash(./gradlew clean assembleDebug:*)",
+      "Bash(java -version:*)",
+      "Bash(export JAVA_HOME=\"/c/Program Files/Android/Android Studio/jbr\")",
+      "Bash(\"$JAVA_HOME/bin/java\" -version)",
+      "Bash(./gradlew clean:*)",
+      "Bash(./gradlew wrapper)",
+      "Bash(\"/c/Program Files/Android/Android Studio/jbr/bin/java\" -version)",
+      "Bash(adb devices:*)",
+      "Bash(\"/c/Users/wwwyo/AppData/Local/Android/Sdk/platform-tools/adb.exe\" devices)",
+      "Bash(\"/c/Users/wwwyo/AppData/Local/Android/Sdk/platform-tools/adb.exe\" install -r app/build/outputs/apk/debug/app-debug.apk)",
+      "Bash(npm install:*)",
+      "Bash(git init:*)",
+      "Bash(git config:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git rebase -i --root --exec \"git commit --amend --author=''''yogesh0803 <yogesh0803@users.noreply.github.com>'''' --no-edit\")",
+      "Bash(find:*)",
+      "Bash(echo:*)",
+      "Bash(.gitignore)",
+      "Bash(README.md)",
+      "Bash(STATUS.txt)",
+      "Bash(SUBMISSION.md)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
