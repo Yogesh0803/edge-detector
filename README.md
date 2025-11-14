@@ -37,7 +37,7 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 
 screenshots
 
-<img src="C:\Users\wwwyo\edgedetector\Screenshot 2025-11-14 152334.png">
+<img src="Screenshot 2025-11-14 152334.png">
 
 
 
