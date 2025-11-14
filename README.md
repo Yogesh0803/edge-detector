@@ -33,3 +33,11 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 - Camera → OpenCV → OpenGL pipeline
 - JNI bridge for native processing
 - Real-time frame processing
+
+
+screenshots
+
+<img src="C:\Users\wwwyo\edgedetector\Screenshot 2025-11-14 152334.png">
+
+
+
