@@ -38,6 +38,7 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 screenshots
 
 <img src="Screenshot 2025-11-14 152334.png">
-
+<img src="rawfeed.jpeg">
+<img src="edge.jpeg">
 
 

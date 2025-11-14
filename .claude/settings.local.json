@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(C:UserswwwyoAppDataLocalAndroidSdkplatform-toolsadb.exe devices)",
+      "Bash(\"C:\\Users\\wwwyo\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe\" devices)",
+      "Bash(\"C:\\Users\\wwwyo\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe\" kill-server)",
+      "Bash(\"C:\\Users\\wwwyo\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe\" start-server)",
+      "Bash(\"C:\\Users\\wwwyo\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe\" devices -l)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
